@@ -1,5 +1,5 @@
 def turn_count(board)
-  board.count()
+  board.count{|x| [" ", "", nil].include?(x)}
 end
 
 def current_player()
